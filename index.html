@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- RESOURCE HINTS & PRELOADS FOR FASTER LOADING -->
+    <link rel="preconnect" href="https://i.ibb.co" crossorigin />
+    <link rel="dns-prefetch" href="https://i.ibb.co" />
+    <link rel="preload" as="image" href="https://i.ibb.co/PZmgqprq/486663014-1596075701340139-4554740733009556368-n.jpg" fetchpriority="high" />
+    <link rel="preload" as="image" href="https://i.ibb.co/9H8vL4Zy/299434746-931377671143282-8706118930720717960-n.jpg" />
+
+    <!-- SEO & METADATA -->
+    <title>Stajnia pod Grojcem – Nauka Jazdy Konnej i Hipoterapia · Żywiec</title>
+    <meta name="description" content="Stajnia pod Grojcem w Żywcu — nauka jazdy konnej dla początkujących i zaawansowanych oraz zajęcia hipoterapii. Tel: 518 421 386" />
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/9H8vL4Zy/299434746-931377671143282-8706118930720717960-n.jpg" />
+    
+    <!-- TAILWIND & CUSTOM STYLES -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-grojec-cream text-grojec-text-dark font-barlow antialiased selection:bg-grojec-gold selection:text-grojec-black">
+
+    <!-- 2. STICKY NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-grojec-black/96 border-b-2 border-grojec-gold backdrop-blur-sm shadow-md transition-all duration-300">
+      <div class="container-grojec h-20 flex items-center justify-between">
+        
+        <!-- Logo / Left -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <img src="https://i.ibb.co/9H8vL4Zy/299434746-931377671143282-8706118930720717960-n.jpg" alt="Logo Stajnia pod Grojcem" class="w-9 h-9 object-cover rounded-[3px] border border-grojec-gold/30 transition-transform group-hover:scale-105 duration-300" />
+          <div class="flex flex-col leading-none">
+            <span class="font-barlow-cond font-extrabold text-lg md:text-xl tracking-wider text-white uppercase">STAJNIA</span>
+            <span class="font-barlow-cond font-medium text-xs tracking-widest text-grojec-gold uppercase mt-0.5">POD GROJCEM</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu / Right -->
+        <div class="hidden md:flex items-center gap-8 font-barlow-cond font-semibold text-sm uppercase tracking-wider text-white/70">
+          <a href="#o-nas" class="hover:text-grojec-gold transition-colors duration-200 py-2">O Nas</a>
+          <a href="#oferta" class="hover:text-grojec-gold transition-colors duration-200 py-2">Oferta</a>
+          <a href="#galeria" class="hover:text-grojec-gold transition-colors duration-200 py-2">Galeria</a>
+          <a href="#opinie" class="hover:text-grojec-gold transition-colors duration-200 py-2">Opinie</a>
+          <a href="#kontakt" class="hover:text-grojec-gold transition-colors duration-200 py-2">Kontakt</a>
+        </div>
+
+        <!-- Desktop Action Pill -->
+        <a href="#kontakt" class="hidden md:inline-block bg-grojec-gold text-grojec-black font-barlow-cond font-bold text-sm tracking-wider uppercase px-5 py-2.5 rounded-full hover:bg-grojec-gold-dark transition-all duration-300 transform hover:-translate-y-0.5">
+          KONTAKT
+        </a>
+
+        <!-- Mobile Hamburger Trigger (Checkbox Hack) -->
+        <input type="checkbox" id="nav-toggle" class="hidden" />
+        <label for="nav-toggle" class="md:hidden flex flex-col justify-center cursor-pointer z-50 p-2 rounded-md hover:bg-grojec-black-mid/50 transition-colors">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </label>
+
+        <!-- Mobile Navigation Menu (Animated drawer triggered by checkbox hack) -->
+        <div class="mobile-menu md:hidden bg-grojec-black w-full absolute top-20 left-0 border-b border-grojec-gold/20 flex flex-col space-y-4 px-6 py-0 pb-6 shadow-xl">
+          <a href="#o-nas" class="font-barlow-cond font-bold text-base uppercase tracking-wider text-white/80 hover:text-grojec-gold py-2 transition-colors border-b border-white/5">O Nas</a>
+          <a href="#oferta" class="font-barlow-cond font-bold text-base uppercase tracking-wider text-white/80 hover:text-grojec-gold py-2 transition-colors border-b border-white/5">Oferta</a>
+          <a href="#galeria" class="font-barlow-cond font-bold text-base uppercase tracking-wider text-white/80 hover:text-grojec-gold py-2 transition-colors border-b border-white/5">Galeria</a>
+          <a href="#opinie" class="font-barlow-cond font-bold text-base uppercase tracking-wider text-white/80 hover:text-grojec-gold py-2 transition-colors border-b border-white/5">Opinie</a>
+          <a href="#kontakt" class="font-barlow-cond font-bold text-base uppercase tracking-wider text-white/80 hover:text-grojec-gold py-2 transition-colors">Kontakt</a>
+          <a href="tel:518421386" class="bg-grojec-gold text-grojec-black font-barlow-cond font-bold text-sm tracking-widest uppercase text-center py-3 rounded-[3px] hover:bg-grojec-gold-dark transition-colors inline-block mt-4">
+            ZADZWOŃ TERAZ
+          </a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <header class="relative min-height-[100vh] flex items-center justify-center bg-cover bg-center bg-no-repeat py-24 md:py-32" style="background-image: url('https://i.ibb.co/PZmgqprq/486663014-1596075701340139-4554740733009556368-n.jpg'); min-height: calc(100vh - 80px);">
+      
+      <!-- Linear Gradient Overlay for deep contrast -->
+      <div class="absolute inset-0 bg-gradient-to-b from-grojec-black/45 via-grojec-black/72 to-grojec-black/97 pointer-events-none"></div>
+      
+      <!-- Content -->
+      <div class="container-grojec relative z-10 text-center text-white">
+        
+        <!-- Section label -->
+        <span class="font-barlow-cond font-semibold text-[0.72rem] tracking-[0.24em] uppercase text-grojec-gold mb-3 block">Grojec · Żywiec</span>
+        
+        <!-- Ornamental Divider -->
+        <div class="ornament dark-section">
+          <span class="orn-line"></span>
+          <span class="orn-mark">🐴</span>
+          <span class="orn-line"></span>
+        </div>
+        
+        <!-- Header Text -->
+        <h1 class="font-playfair font-bold text-[clamp(2.8rem,7vw,5.5rem)] leading-none text-white tracking-tight mt-4 mb-6">
+          Stajnia <span class="font-normal italic text-grojec-gold block sm:inline mt-2 sm:mt-0">pod Grojcem</span>
+        </h1>
+        
+        <!-- Short description -->
+        <p class="font-barlow text-white/85 text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+          Zapraszamy na naukę jazdy konnej — dla dobrze jeżdżących jak i początkujących — oraz profesjonalne zajęcia hipoterapii.
+        </p>
+        
+        <!-- Chips -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12 max-w-3xl mx-auto">
+          <span class="border border-grojec-gold/40 bg-grojec-black/50 text-white/90 font-barlow font-medium text-xs md:text-sm px-4 py-2.5 rounded-[3px] flex items-center gap-2">🐴 Nauka jazdy konnej</span>
+          <span class="border border-grojec-gold/40 bg-grojec-black/50 text-white/90 font-barlow font-medium text-xs md:text-sm px-4 py-2.5 rounded-[3px] flex items-center gap-2">🌟 Dla początkujących</span>
+          <span class="border border-grojec-gold/40 bg-grojec-black/50 text-white/90 font-barlow font-medium text-xs md:text-sm px-4 py-2.5 rounded-[3px] flex items-center gap-2">💛 Hipoterapia</span>
+          <span class="border border-grojec-gold/40 bg-grojec-black/50 text-white/90 font-barlow font-medium text-xs md:text-sm px-4 py-2.5 rounded-[3px] flex items-center gap-2">📍 Żywiec</span>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="tel:518421386" class="w-full sm:w-auto font-barlow-cond font-bold text-base tracking-widest uppercase bg-grojec-gold text-grojec-black px-8 py-4 rounded-[3px] hover:bg-grojec-gold-dark transition-all duration-300 shadow-lg shadow-grojec-gold/10 inline-flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+            ZADZWOŃ: 518 421 386
+          </a>
+          <a href="#galeria" class="w-full sm:w-auto font-barlow-cond font-bold text-base tracking-widest uppercase border border-white/30 text-white px-8 py-4 rounded-[3px] hover:bg-white/10 hover:border-white transition-all duration-300 inline-flex items-center justify-center">
+            GALERIA
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- 4. ABOUT SECTION -->
+    <section id="o-nas" class="section-pad light-section bg-white border-b border-grojec-border">
+      <div class="container-grojec">
+        
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <span class="font-barlow-cond font-semibold text-[0.72rem] tracking-[0.24em] uppercase text-[#B8942A] mb-2 block">O NAS</span>
+          <div class="h2-title-container">
+            <h2 class="font-playfair font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] text-grojec-black leading-tight">Nasza pasja i profesjonalizm</h2>
+          </div>
+          <div class="ornament light-section">
+            <span class="orn-line"></span>
+            <span class="orn-mark">🐴</span>
+            <span class="orn-line"></span>
+          </div>
+        </div>
+
+        <!-- Columns layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+          
+          <!-- Left Column (General info) -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <p class="font-barlow text-grojec-text-mid text-lg leading-relaxed mb-6">
+              <strong class="font-semibold text-grojec-black">Stajnia pod Grojcem</strong> to wyjątkowe miejsce na jeździeckiej mapie Żywiecczyzny, prowadzone z ogromną pasją, sercem i zaangażowaniem przez <strong class="font-semibold text-grojec-black">Panią Paulinę Cader</strong>. 
+            </p>
+            <p class="font-barlow text-grojec-text-mid text-lg leading-relaxed mb-10">
+              Uczymy jazdy konnej w sposób odpowiedzialny i bezstresowy — zarówno osoby stawiające swoje absolutnie pierwsze kroki w siodle, jak i jeźdźców zaawansowanych pragnących doskonalić swoje umiejętności. Specjalizujemy się także w profesjonalnych zajęciach hipoterapii, w których dobroczynny kontakt z koniem łączymy z indywidualną terapią i wsparciem rozwoju najmłodszych.
+            </p>
+
+            <!-- Feature rows inside boxes -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="border border-grojec-border rounded-[3px] p-4 bg-grojec-cream/30 flex items-center gap-4 hover:border-grojec-gold transition-colors duration-200">
+                <span class="text-2xl">🐴</span>
+                <span class="font-barlow font-medium text-sm text-grojec-text-dark">Nauka jazdy konnej dla każdego poziomu</span>
+              </div>
+              <div class="border border-grojec-border rounded-[3px] p-4 bg-grojec-cream/30 flex items-center gap-4 hover:border-grojec-gold transition-colors duration-200">
+                <span class="text-2xl">💛</span>
+                <span class="font-barlow font-medium text-sm text-grojec-text-dark">Hipoterapia pod fachowym okiem</span>
+              </div>
+              <div class="border border-grojec-border rounded-[3px] p-4 bg-grojec-cream/30 flex items-center gap-4 hover:border-grojec-gold transition-colors duration-200">
+                <span class="text-2xl">🌟</span>
+                <span class="font-barlow font-medium text-sm text-grojec-text-dark">Indywidualne podejście Pani Pauliny</span>
+              </div>
+              <div class="border border-grojec-border rounded-[3px] p-4 bg-grojec-cream/30 flex items-center gap-4 hover:border-grojec-gold transition-colors duration-200">
+                <span class="text-2xl">📍</span>
+                <span class="font-barlow font-medium text-sm text-grojec-text-dark">Urokliwe położenie — Grojec, Żywiec</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Contact Card) -->
+          <div class="lg:col-span-5">
+            <div class="bg-grojec-black text-white p-8 md:p-10 rounded-[3px] border border-grojec-gold/20 flex flex-col justify-between h-full relative overflow-hidden shadow-xl">
+              <!-- Decorative watermarked background letter -->
+              <div class="absolute -right-8 -bottom-8 text-white/5 font-playfair font-bold text-[12rem] pointer-events-none select-none">G</div>
+              
+              <div>
+                <span class="font-barlow-cond font-semibold text-xs tracking-[0.2em] uppercase text-grojec-gold mb-4 block">SZYBKI KONTAKT</span>
+                <h3 class="font-playfair font-bold text-2xl text-white mb-8 border-b border-white/10 pb-4">Paulina Cader</h3>
+                
+                <div class="space-y-6">
+                  <div>
+                    <span class="font-barlow text-white/50 text-xs uppercase tracking-wider block mb-1">Zadzwoń bezpośrednio:</span>
+                    <a href="tel:518421386" class="font-playfair font-bold text-2xl md:text-3xl text-grojec-gold hover:text-white transition-colors duration-200 focus:outline-none focus:text-white block">518 421 386</a>
+                  </div>
+                  
+                  <div>
+                    <span class="font-barlow text-white/50 text-xs uppercase tracking-wider block mb-1">Wyślij e-mail:</span>
+                    <a href="mailto:paulinacader@gmail.com" class="font-barlow font-medium text-base text-white hover:text-grojec-gold transition-colors duration-200 break-all focus:outline-none block">paulinacader@gmail.com</a>
+                  </div>
+                  
+                  <div>
+                    <span class="font-barlow text-white/50 text-xs uppercase tracking-wider block mb-1">Adres stajni:</span>
+                    <p class="font-barlow text-white/95 text-base leading-relaxed">
+                      Grojec 13<br />
+                      Żywiec 34-300
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-10 pt-6 border-t border-white/10">
+                <a href="#kontakt" class="font-barlow-cond font-bold text-sm text-grojec-gold hover:text-white uppercase tracking-widest inline-flex items-center gap-2 transition-colors duration-200">
+                  ZOBACZ LOKALIZACJĘ NA MAPIE &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. OFERTA SECTION -->
+    <section id="oferta" class="section-pad light-section bg-grojec-gold-pale border-b border-grojec-border">
+      <div class="container-grojec">
+        
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <span class="font-barlow-cond font-semibold text-[0.72rem] tracking-[0.24em] uppercase text-[#B8942A] mb-2 block">OFERTA</span>
+          <div class="h2-title-container">
+            <h2 class="font-playfair font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] text-grojec-black leading-tight">Co oferujemy w naszej stajni?</h2>
+          </div>
+          <div class="ornament light-section">
+            <span class="orn-line"></span>
+            <span class="orn-mark">🐴</span>
+            <span class="orn-line"></span>
+          </div>
+        </div>
+
+        <!-- Cards row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          
+          <!-- Card 1: Riding lessons -->
+          <div class="bg-white rounded-[3px] border-t-4 border-t-grojec-gold border-x border-b border-grojec-border p-8 md:p-10 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-grojec-cream border border-grojec-border flex items-center justify-center text-2xl rounded-[3px] mb-6">🐴</div>
+              <h3 class="font-barlow-cond font-bold text-2xl tracking-wider uppercase text-grojec-black mb-4">Nauka jazdy konnej</h3>
+              <p class="font-barlow text-grojec-text-mid text-base leading-relaxed mb-6">
+                Oferujemy pełnowymiarowy program szkolenia jeździeckiego dostosowany ściśle do indywidualnych predyspozycji i oczekiwań. Gwarantujemy spokojną, cierpliwą i konstruktywną atmosferę podczas każdych zajęć.
+              </p>
+              
+              <ul class="space-y-3 font-barlow text-grojec-text-mid text-sm mb-8 border-t border-grojec-border/40 pt-6">
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Lekcje od podstaw:</strong> nauka czyszczenia, siodłania oraz jazdy na lonży</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Jazdy na ujeżdżalni:</strong> stęp, kłus, galop w zastępie lub indywidualnie</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Doskonalenie techniki:</strong> podstawy skoków i ujeżdżenia</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Wyjazdy w teren:</strong> malownicze ścieżki i beskidzkie pejzaże</span>
+                </li>
+              </ul>
+            </div>
+            <div class="border-t border-grojec-border/40 pt-4">
+              <span class="font-barlow-cond font-bold text-xs tracking-widest text-[#B8942A] uppercase">INDYWIDUALNY TOK · BEZPIECZEŃSTWO PRZEDE WSZYSTKIM</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Hippotherapy -->
+          <div class="bg-white rounded-[3px] border-t-4 border-t-grojec-gold border-x border-b border-grojec-border p-8 md:p-10 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-grojec-cream border border-grojec-border flex items-center justify-center text-2xl rounded-[3px] mb-6">💛</div>
+              <h3 class="font-barlow-cond font-bold text-2xl tracking-wider uppercase text-grojec-black mb-4">Zajęcia hipoterapii</h3>
+              <p class="font-barlow text-grojec-text-mid text-base leading-relaxed mb-6">
+                Zajęcia prowadzone są bezpośrednio przez dyplomowaną terapeutkę, Panią Paulinę Cader. Hipoterapia to wyjątkowa, uznana naukowo metoda terapii, wykorzystująca unikalne cechy ruchu konia oraz bezpośredni kontakt z nim.
+              </p>
+              
+              <ul class="space-y-3 font-barlow text-grojec-text-mid text-sm mb-8 border-t border-grojec-border/40 pt-6">
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Korekcja postawy ciała:</strong> naturalna stymulacja wzorców chodu</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Integracja sensoryczna:</strong> pobudzanie zmysłów przez ruch i dotyk</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Wsparcie emocjonalne:</strong> wyciszenie, budowanie poczucia sprawczości</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-grojec-gold font-bold text-base">&bull;</span>
+                  <span><strong>Terapia dzieci i dorosłych:</strong> indywidualnie dobrany program ćwiczeń</span>
+                </li>
+              </ul>
+            </div>
+            <div class="border-t border-grojec-border/40 pt-4">
+              <span class="font-barlow-cond font-bold text-xs tracking-widest text-[#B8942A] uppercase">TERAPIA AUTORYZOWANA PRZEZ PAULINĘ CADER</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Gold CTA Strip -->
+        <div class="bg-grojec-gold rounded-[3px] p-6 text-center border border-grojec-gold-dark shadow-md flex flex-col lg:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
+          <p class="font-barlow-cond font-bold text-lg md:text-xl text-grojec-black uppercase tracking-wider text-center lg:text-left">
+            Szukasz profesjonalnego podejścia i domowej atmosfery? Zadzwoń do nas!
+          </p>
+          <a href="tel:518421386" class="w-full lg:w-auto bg-grojec-black text-white hover:bg-grojec-black-mid text-xs md:text-sm font-barlow-cond font-bold uppercase tracking-widest px-6 py-3.5 rounded-[3px] transition-all duration-300 inline-flex items-center justify-center gap-2 whitespace-nowrap shadow-lg">
+            📞 ZAPYTAJ O ZAJĘCIA — 518 421 386
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. GALLERY SECTION -->
+    <section id="galeria" class="section-pad light-section bg-grojec-cream">
+      <div class="container-grojec">
+        
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <span class="font-barlow-cond font-semibold text-[0.72rem] tracking-[0.24em] uppercase text-[#B8942A] mb-2 block">GALERIA</span>
+          <div class="h2-title-container">
+            <h2 class="font-playfair font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] text-grojec-black leading-tight">Życie stajni w kadrze</h2>
+          </div>
+          <div class="ornament light-section">
+            <span class="orn-line"></span>
+            <span class="orn-mark">🐴</span>
+            <span class="orn-line"></span>
+          </div>
+        </div>
+
+        <!-- Gallery Checkbox Hack -->
+        <input type="checkbox" id="gallery-toggle" />
+
+        <!-- First 8 Visible Images -->
+        <div class="gallery-grid-columns">
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/1Ybj08vb/image.jpg" alt="Koń w Stajni pod Grojcem" width="600" height="450" decoding="async" fetchpriority="high" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/6RM1L0Y1/image.jpg" alt="Paulina Cader z koniem na ujeżdżalni" width="600" height="450" decoding="async" fetchpriority="high" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/MD3CRRmH/image.jpg" alt="Nauka jazdy konnej w Żywcu" width="600" height="450" decoding="async" fetchpriority="high" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/kVBHZqgG/image.jpg" alt="Zajęcia hipoterapii pod Grojcem" width="600" height="450" decoding="async" fetchpriority="high" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/JWRRQDZ3/image.jpg" alt="Trening jeździecki pod Grojcem" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/NnCP1Z9b/image.jpg" alt="Konie na wybiegu w Żywcu" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/RTPw47NP/image.jpg" alt="Stajnia pod Grojcem hipoterapia" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+          <div class="gallery-photo-item">
+            <img src="https://i.ibb.co/N29sTD18/image.jpg" alt="Zajęcia z instruktorem jazdy konnej" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+          </div>
+        </div>
+
+        <!-- Hidden 8 Images (Shown when checked) -->
+        <div class="gallery-hidden-container mt-4">
+          <div class="gallery-grid-columns">
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/WWmV6RYQ/image.jpg" alt="Malownicze otoczenie stajni w Żywcu" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/mCWFc9FK/image.jpg" alt="Konie w ujeżdżalni stajni" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/MxYfnkVt/image.jpg" alt="Zajęcia dla najmłodszych w siodle" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/nq1zMDNm/image.jpg" alt="Jesienny wyjazd w teren w Żywcu" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/WWYX4DHK/image.jpg" alt="Podopieczni Pani Pauliny" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/PzW8rxTd/image.jpg" alt="Terapeutyczne walory hipoterapii" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/TqpvT75P/image.jpg" alt="Zadowolony jeździec w stajni" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+            <div class="gallery-photo-item">
+              <img src="https://i.ibb.co/rRCyrB4w/image.jpg" alt="Stajnia pod Grojcem krajobraz" width="600" height="450" decoding="async" fetchpriority="low" loading="lazy" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom gallery expand label buttons -->
+        <div class="gallery-btn-container text-center mt-12">
+          <label for="gallery-toggle" class="inline-block bg-grojec-black text-white hover:bg-grojec-black-mid border border-grojec-border font-barlow-cond font-bold text-sm tracking-widest uppercase px-8 py-4 rounded-[3px] cursor-pointer transition-all duration-300">
+            <span class="btn-text-show">POKAŻ WIĘCEJ ZDJĘĆ</span>
+            <span class="btn-text-hide">UKRYJ DODATKOWE ZDJĘCIA</span>
+          </label>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. REVIEWS SECTION -->
+    <section id="opinie" class="section-pad dark-section bg-grojec-black text-white">
+      <div class="container-grojec">
+        
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <span class="font-barlow-cond font-semibold text-[0.72rem] tracking-[0.24em] uppercase text-grojec-gold mb-2 block">OPINIE</span>
+          <div class="h2-title-container">
+            <h2 class="font-playfair font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] text-white leading-tight">Co mówią o nas jeźdźcy?</h2>
+          </div>
+          <div class="ornament dark-section">
+            <span class="orn-line"></span>
+            <span class="orn-mark">🐴</span>
+            <span class="orn-line"></span>
+          </div>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          
+          <!-- Review 1 -->
+          <div class="bg-grojec-black-surface border border-grojec-black-mid p-8 rounded-[3px] flex flex-col justify-between hover:border-grojec-gold/20 transition-all duration-300">
+            <div>
+              <!-- Stars -->
+              <div class="flex text-grojec-gold gap-1 mb-4 text-sm">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="font-playfair text-5xl text-grojec-gold/15 leading-none block -mb-2">“</span>
+              <p class="font-barlow text-white/80 text-base leading-relaxed italic mb-6">
+                Bardzo przyjazna atmosfera, profesjonalne podejście Pani Pauliny do nauki jeździectwa oraz do swoich podopiecznych. Polecam z całego serca to wspaniałe miejsce.
+              </p>
+            </div>
+            <div class="border-t border-white/5 pt-4 flex justify-between items-center text-xs">
+              <span class="font-barlow-cond font-bold uppercase tracking-wider text-grojec-gold">Użytkownik Facebooka</span>
+              <span class="text-white/40">Zdecydowanie polecam</span>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-grojec-black-surface border border-grojec-black-mid p-8 rounded-[3px] flex flex-col justify-between hover:border-grojec-gold/20 transition-all duration-300">
+            <div>
+              <!-- Stars -->
+              <div class="flex text-grojec-gold gap-1 mb-4 text-sm">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="font-playfair text-5xl text-grojec-gold/15 leading-none block -mb-2">“</span>
+              <p class="font-barlow text-white/80 text-base leading-relaxed italic mb-6">
+                Najlepsza stajnia pod słońcem ❤️ Indywidualne podejście, zdrowe i zadbane konie oraz cudowna Pani Paulina, która ma niezwykłe podejście do najmłodszych.
+              </p>
+            </div>
+            <div class="border-t border-white/5 pt-4 flex justify-between items-center text-xs">
+              <span class="font-barlow-cond font-bold uppercase tracking-wider text-grojec-gold">Użytkownik Facebooka</span>
+              <span class="text-white/40">Najlepsza pod słońcem</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-grojec-black-surface border border-grojec-black-mid p-8 rounded-[3px] flex flex-col justify-between hover:border-grojec-gold/20 transition-all duration-300">
+            <div>
+              <!-- Stars -->
+              <div class="flex text-grojec-gold gap-1 mb-4 text-sm">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="font-playfair text-5xl text-grojec-gold/15 leading-none block -mb-2">“</span>
+              <p class="font-barlow text-white/80 text-base leading-relaxed italic mb-6">
+                Najlepsza stajnia na świecie 😍😍😍 Polecam każdemu, kto marzy o nauce jazdy w zgodzie z naturą konia i pod opieką świetnego pedagoga i terapeuty.
+              </p>
+            </div>
+            <div class="border-t border-white/5 pt-4 flex justify-between items-center text-xs">
+              <span class="font-barlow-cond font-bold uppercase tracking-wider text-grojec-gold">Użytkownik Facebooka</span>
+              <span class="text-white/40">Gorąco polecam</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Facebook link -->
+        <div class="text-center">
+          <a href="https://www.facebook.com/people/Stajnia-pod-Grojcem/100063546747515/reviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-barlow-cond font-bold text-sm tracking-widest uppercase text-grojec-gold hover:text-white transition-colors duration-200">
+            ZOBACZ WSZYSTKIE OPINIE NA NASZYM PROFILU FACEBOOK &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION & MAPS -->
+    <section id="kontakt" class="section-pad light-section bg-white border-b border-grojec-border">
+      <div class="container-grojec">
+        
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <span class="font-barlow-cond font-semibold text-[0.72rem] tracking-[0.24em] uppercase text-[#B8942A] mb-2 block">KONTAKT</span>
+          <div class="h2-title-container">
+            <h2 class="font-playfair font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] text-grojec-black leading-tight">Odwiedź nas osobiście</h2>
+          </div>
+          <div class="ornament light-section">
+            <span class="orn-line"></span>
+            <span class="orn-mark">🐴</span>
+            <span class="orn-line"></span>
+          </div>
+        </div>
+
+        <!-- Two-column content + Google Maps -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+          
+          <!-- Contact Rows -->
+          <div class="lg:col-span-5 flex flex-col justify-between">
+            <div>
+              <h3 class="font-playfair font-bold text-2xl text-grojec-black mb-6">Serdecznie zapraszamy!</h3>
+              <p class="font-barlow text-grojec-text-mid text-base leading-relaxed mb-8">
+                Wszystkie lekcje jazdy konnej oraz sesje hipoterapii planowane są indywidualnie. Skontaktuj się telefonicznie bezpośrednio z Panią Pauliną Cader, aby omówić szczegóły i zarezerwować termin.
+              </p>
+
+              <div class="space-y-6">
+                
+                <!-- Phone -->
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-grojec-cream border border-grojec-border flex items-center justify-center text-lg rounded-[3px] shrink-0">📞</div>
+                  <div>
+                    <span class="font-barlow-cond font-bold text-xs uppercase tracking-wider text-grojec-muted block mb-1">TELEFON BEZPOŚREDNI</span>
+                    <a href="tel:518421386" class="font-barlow font-bold text-xl text-grojec-text-dark hover:text-[#B8942A] transition-colors duration-150">518 421 386</a>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-grojec-cream border border-grojec-border flex items-center justify-center text-lg rounded-[3px] shrink-0">✉️</div>
+                  <div>
+                    <span class="font-barlow-cond font-bold text-xs uppercase tracking-wider text-grojec-muted block mb-1">ADRES E-MAIL</span>
+                    <a href="mailto:paulinacader@gmail.com" class="font-barlow font-bold text-lg text-grojec-text-dark hover:text-[#B8942A] transition-colors duration-150 break-all">paulinacader@gmail.com</a>
+                  </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-grojec-cream border border-grojec-border flex items-center justify-center text-lg rounded-[3px] shrink-0">📍</div>
+                  <div>
+                    <span class="font-barlow-cond font-bold text-xs uppercase tracking-wider text-grojec-muted block mb-1">LOKALIZACJA STAJNI</span>
+                    <p class="font-barlow font-bold text-lg text-grojec-text-dark leading-snug">
+                      Grojec 13, Żywiec 34-300
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Facebook link -->
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-grojec-cream border border-grojec-border flex items-center justify-center text-lg rounded-[3px] shrink-0">👥</div>
+                  <div>
+                    <span class="font-barlow-cond font-bold text-xs uppercase tracking-wider text-grojec-muted block mb-1">PROFIL NA FACEBOOKU</span>
+                    <a href="https://www.facebook.com/people/Stajnia-pod-Grojcem/100063546747515/" target="_blank" rel="noopener noreferrer" class="font-barlow font-bold text-lg text-grojec-text-dark hover:text-[#B8942A] transition-colors duration-150">Stajnia pod Grojcem</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- CTA Call button -->
+            <div class="mt-10 pt-6 border-t border-grojec-border">
+              <a href="tel:518421386" class="w-full bg-grojec-gold hover:bg-grojec-gold-dark text-grojec-black font-barlow-cond font-bold uppercase tracking-widest text-center py-4 rounded-[3px] transition-colors duration-300 inline-block shadow-md">
+                📞 ZADZWOŃ: 518 421 386
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="lg:col-span-7 h-[450px] lg:h-auto rounded-[3px] overflow-hidden border border-grojec-border shadow-inner">
+            <iframe 
+              src="https://maps.google.com/maps?q=Grojec%2013,%20%C5%BBywiec%2034-300&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="grayscale contrast-110 hover:grayscale-0 transition-all duration-500">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-grojec-black text-white border-t-4 border-t-grojec-gold py-16">
+      <div class="container-grojec">
+        
+        <!-- Upper part -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/10 pb-10 mb-10">
+          
+          <!-- Logo & Wordmark -->
+          <div class="flex items-center gap-4">
+            <img src="https://i.ibb.co/9H8vL4Zy/299434746-931377671143282-8706118930720717960-n.jpg" alt="Logo Stajnia pod Grojcem" class="w-12 h-12 object-cover rounded-[3px] border border-grojec-gold/30" />
+            <div class="flex flex-col">
+              <span class="font-barlow-cond font-extrabold text-xl tracking-wider uppercase text-white leading-none">STAJNIA</span>
+              <span class="font-barlow-cond font-medium text-sm tracking-widest uppercase text-grojec-gold leading-none mt-1.5">POD GROJCEM</span>
+            </div>
+          </div>
+
+          <!-- Quick Navigation Links -->
+          <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 font-barlow-cond font-semibold text-sm uppercase tracking-wider text-white/60">
+            <a href="#o-nas" class="hover:text-grojec-gold transition-colors duration-200">O Nas</a>
+            <a href="#oferta" class="hover:text-grojec-gold transition-colors duration-200">Oferta</a>
+            <a href="#galeria" class="hover:text-grojec-gold transition-colors duration-200">Galeria</a>
+            <a href="#opinie" class="hover:text-grojec-gold transition-colors duration-200">Opinie</a>
+            <a href="#kontakt" class="hover:text-grojec-gold transition-colors duration-200">Kontakt</a>
+          </div>
+
+        </div>
+
+        <!-- Lower part -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 font-barlow text-sm text-white/40">
+          <p class="text-center md:text-left leading-relaxed">
+            Stajnia pod Grojcem &bull; Grojec 13, Żywiec 34-300 &bull; Paulina Cader &bull; Tel: <a href="tel:518421386" class="hover:text-grojec-gold transition-colors">518 421 386</a>
+          </p>
+          <p class="text-center md:text-right">
+            &copy; 2026 Stajnia pod Grojcem. Wszelkie prawa zastrzeżone.
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

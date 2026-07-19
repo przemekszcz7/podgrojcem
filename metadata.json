@@ -1,0 +1,6 @@
+{
+  "name": "Stajnia pod Grojcem",
+  "description": "Stajnia pod Grojcem w Żywcu — nauka jazdy konnej dla początkujących i zaawansowanych oraz zajęcia hipoterapii. Tel: 518 421 386",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

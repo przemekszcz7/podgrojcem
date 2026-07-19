@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-grojec-black: #1E1A19;
+  --color-grojec-gold: #FED343;
+  --color-grojec-black-surface: #282422;
+  --color-grojec-black-mid: #332E2B;
+  --color-grojec-gold-dark: #E0B82A;
+  --color-grojec-gold-pale: #FFF3CC;
+  --color-grojec-cream: #F7F4EC;
+  --color-grojec-surface: #FFFFFF;
+  --color-grojec-text-dark: #1E1A19;
+  --color-grojec-text-mid: #4A4038;
+  --color-grojec-muted: #8A8074;
+  --color-grojec-border: #E4DCC8;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-barlow-cond: "Barlow Condensed", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+}
+
+/* BASE STYLES */
+body {
+  font-family: var(--font-barlow);
+  background-color: var(--color-grojec-cream);
+  color: var(--color-grojec-text-dark);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* SPATIAL RULES */
+.section-pad {
+  padding: 92px 0;
+}
+
+.container-grojec {
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.rounded-grojec {
+  border-radius: 3px !important;
+}
+
+.border-grojec {
+  border: 1px solid #E4DCC8;
+}
+
+/* ORNAMENTAL SYSTEM */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.orn-line {
+  height: 1px;
+  width: 80px;
+}
+
+.dark-section .orn-line {
+  background-color: rgba(254, 211, 67, 0.5);
+}
+
+.light-section .orn-line {
+  background-color: rgba(184, 148, 42, 0.35);
+}
+
+.orn-mark {
+  font-size: 1.1rem;
+}
+
+.h2-title-container {
+  display: inline-block;
+  border-bottom: 3px solid #FED343;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+/* NAVIGATION HACKS */
+#nav-toggle {
+  display: none;
+}
+
+/* Custom hamburger lines */
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
+
+#nav-toggle:checked + label .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#nav-toggle:checked + label .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle:checked + label .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-toggle:checked ~ .mobile-menu {
+  max-height: 400px;
+  opacity: 1;
+  border-top: 1px solid rgba(254, 211, 67, 0.2);
+}
+
+/* GALLERY CHECKBOX HACK */
+#gallery-toggle {
+  display: none;
+}
+
+.gallery-hidden-container {
+  display: none;
+}
+
+#gallery-toggle:checked ~ .gallery-hidden-container {
+  display: block;
+}
+
+#gallery-toggle:checked ~ .gallery-btn-container label .btn-text-show {
+  display: none;
+}
+
+#gallery-toggle:checked ~ .gallery-btn-container label .btn-text-hide {
+  display: inline;
+}
+
+#gallery-toggle:not(:checked) ~ .gallery-btn-container label .btn-text-show {
+  display: inline;
+}
+
+#gallery-toggle:not(:checked) ~ .gallery-btn-container label .btn-text-hide {
+  display: none;
+}
+
+/* MASONRY COLUMNS */
+.gallery-grid-columns {
+  column-count: 1;
+  column-gap: 16px;
+}
+@media (min-width: 640px) {
+  .gallery-grid-columns {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-grid-columns {
+    column-count: 4;
+  }
+}
+
+.gallery-photo-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: var(--color-grojec-black-surface);
+}
+
+.gallery-photo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  transition: transform 0.5s ease;
+}
+
+.gallery-photo-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-photo-item:hover {
+  outline: 2px solid #FED343;
+  outline-offset: -2px;
+  box-shadow: 0 10px 25px -5px rgba(30, 26, 25, 0.35);
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
